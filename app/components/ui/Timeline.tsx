@@ -33,11 +33,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white border-[.1px]  border-gray-300 px-12  rounded-xl my-32  font-sans overflow-hidden  "
+      className="w-full  border-[.1px]  border-amber-50 px-12  rounded-xl my-32  font-sans overflow-hidden  "
       ref={containerRef}
     >
       <div className="  py-20 ">
-        <h2 className="text-lg md:text-4xl mb-4 uppercase text-black font-semibold max-w-4xl">
+        <h2 className="text-lg md:text-4xl mb-4 uppercase text-neutral-700 dark:text-neutral-300 font-semibold max-w-4xl">
           Collaborative Project Development{" "}
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-4xl">
@@ -64,10 +64,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
             <div className="relative pl-20 pr-4 md:pl-4 ">
               <div className="mb-3 flex flex-col gap-1">
-                <p className="text-2xl uppercase font-semibold">
+                <p className="text-2xl uppercase font-semibold text-white">
                   {item.Content}
                 </p>
-                <p className="text-neutral-700">{item.Discritiption}</p>
+                <p className="text-gray-200">{item.Discritiption}</p>
               </div>
 
               <div className="h-48">

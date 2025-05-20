@@ -8,7 +8,9 @@ export default async function BlogFetching() {
   console.log(Blogs);
   return (
     <div>
-      <h1 className="text-center text-2xl font-semibold uppercase">Blogs</h1>
+      <h1 className="text-center text-2xl font-semibold uppercase text-white">
+        Blogs
+      </h1>
       <HoverEffect2 Blog={Blog} />
     </div>
   );

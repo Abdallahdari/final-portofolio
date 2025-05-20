@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex items-center justify-center py-4">
+    <div className="flex items-center justify-center py-4 text-white">
       <div className="flex flex-col gap-3">
         <div className="flex items-center  justify-center gap-4">
           <div className="flex items-center gap-3">
@@ -24,14 +24,23 @@ export default function Footer() {
           © {new Date().getFullYear()} Devpro Portfolio Template. All rights
           reserved.
         </p>
-        <div className="flex items-center gap-4 justify-center">
-          <Link href={"https://github.com/Abdallahdari?tab=repositories"}>
+        <div className="flex items-center gap-2 justify-center">
+          <Link
+            href={"https://github.com/Abdallahdari?tab=repositories"}
+            className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
+          >
             <Github />
           </Link>
-          <Link href={""}>
+          <Link
+            href={""}
+            className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
+          >
             <Linkedin />
           </Link>
-          <Link href={"https://www.instagram.com/dhere_coder_/"}>
+          <Link
+            href={"https://www.instagram.com/dhere_coder_/"}
+            className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
+          >
             <Instagram />
           </Link>
         </div>

@@ -34,8 +34,8 @@ export const HoverEffect = ({
             key={item}
             type="button"
             className={`${
-              selected === item ? "bg-slate-950  text-white" : ""
-            } border border-gray-400 rounded-lg px-4 py-2 transition-all duration-500  `}
+              selected === item ? "bg-[#bac8ff]   text-black" : "text-white"
+            } border border-gray-400 rounded-lg  px-4 py-2 transition-all duration-500  `}
             onClick={() => setSelected(item)}
           >
             {item}
