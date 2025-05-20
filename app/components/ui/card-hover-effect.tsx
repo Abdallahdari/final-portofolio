@@ -17,7 +17,7 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [selected, setSelected] = useState<string>("All");
   const Cat = ["All", ...new Set(items.map((item) => item.Catogery))];
   const filteredItems =
