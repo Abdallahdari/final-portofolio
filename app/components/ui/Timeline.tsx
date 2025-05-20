@@ -1,6 +1,5 @@
 "use client";
 import { useScroll, useTransform, motion } from "motion/react";
-import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -9,7 +8,6 @@ interface TimelineEntry {
   image: string;
   Discritiption: string;
 }
-export const revalidate = 120;
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -71,9 +69,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
 
               <div className="h-48">
-                <Image
-                  width={500}
-                  height={500}
+                <img
                   src={item.image}
                   alt={item.titile}
                   className="object-cover h-full rounded-md"
