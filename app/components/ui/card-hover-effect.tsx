@@ -14,6 +14,7 @@ export const HoverEffect = ({
     Desctrition: string;
     image: string;
     id: string;
+    Links: string;
   }[];
   className?: string;
 }) => {
@@ -51,7 +52,7 @@ export const HoverEffect = ({
       >
         {filteredItems.map((item, idx) => (
           <Link
-            href={""}
+            href={item.Links}
             key={item.id}
             className="relative group  block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
