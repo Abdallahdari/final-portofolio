@@ -38,12 +38,6 @@ export default function Navbar() {
             >
               Project
             </Link>
-            <Link
-              href={"#blogs"}
-              className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
-            >
-              Blogs
-            </Link>
           </div>
         </div>
         <div className="bg-[#373D43] text-white py-2 px-4 rounded-xl hover:bg-[#363a3a] transition-all duration-300">

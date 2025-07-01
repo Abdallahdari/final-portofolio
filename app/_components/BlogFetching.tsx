@@ -1,17 +1,17 @@
-import React from "react";
+// import React from "react";
 
-import { HoverEffect2 } from "../components/ui/HoverEffect2";
-import { Blogs } from "../_lib/data";
+// import { HoverEffect2 } from "../components/ui/HoverEffect2";
+// import { Blogs } from "../_lib/data";
 
-export default async function BlogFetching() {
-  const Blog = await Blogs();
-  console.log(Blogs);
-  return (
-    <div>
-      <h1 className="text-center text-2xl font-semibold uppercase text-white">
-        New Blogs
-      </h1>
-      <HoverEffect2 Blog={Blog} />
-    </div>
-  );
-}
+// export default async function BlogFetching() {
+//   const Blog = await Blogs();
+//   console.log(Blogs);
+//   return (
+//     <div>
+//       <h1 className="text-center text-2xl font-semibold uppercase text-white">
+//         New Blogs
+//       </h1>
+//       <HoverEffect2 Blog={Blog} />
+//     </div>
+//   );
+// }

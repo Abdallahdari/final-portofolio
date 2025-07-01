@@ -30,7 +30,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
+    <motion.div
       className="w-full  border-[.1px]  border-amber-50 px-12  rounded-xl my-32  font-sans overflow-hidden  "
       ref={containerRef}
     >
@@ -93,6 +93,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

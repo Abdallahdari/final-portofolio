@@ -4,7 +4,8 @@ import Experice from "./_components/Experice";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import { CardHoverEffectDemo } from "./_components/CardHoverEffectDemo";
-import BlogFetching from "./_components/BlogFetching";
+
+// import BlogFetching from "./_components/BlogFetching";
 export default function page() {
   return (
     <div className="container mx-auto xl:max-w-[1200px] py-7">
@@ -13,7 +14,7 @@ export default function page() {
         <Hero />
         <Experice />
         <CardHoverEffectDemo />
-        <BlogFetching />
+        {/* <BlogFetching /> */}
         <Footer />
       </>
     </div>
