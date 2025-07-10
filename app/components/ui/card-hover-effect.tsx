@@ -28,7 +28,7 @@ export const HoverEffect = ({
 
   return (
     <div>
-      <div className="flex items-center justify-center gap-4 mt-6">
+      <div className="md:flex hidden  items-center justify-center gap-4 mt-6">
         {" "}
         {Cat.map((item) => (
           <button

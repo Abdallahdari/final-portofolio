@@ -5,8 +5,8 @@ import React from "react";
 export default function Navbar() {
   return (
     <div className="w-full sticky top-4 z-50">
-      <div className="flex items-center justify-between gap-5">
-        <div className="flex flex-row space-x-12 items-center antialiased border px-4 py-2 rounded-2xl border-zinc-700/60 bg-zinc-800">
+      <div className="md:flex items-center justify-between gap-5 px-4">
+        <div className="hidden md:flex flex-row space-x-12 items-center antialiased border px-4 py-2 rounded-2xl border-zinc-700/60 bg-zinc-800">
           <div className="flex items-center gap-3">
             <Image
               src={"/pro.png"}
@@ -40,7 +40,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <div className="bg-[#373D43] text-white py-2 px-4 rounded-xl hover:bg-[#363a3a] transition-all duration-300">
+        <div className="bg-[#373D43] text-white flex items-center justify-center py-2 px-4 rounded-xl hover:bg-[#363a3a] transition-all duration-300">
           <Link href={"/pdf"}>Download cv</Link>
         </div>
       </div>

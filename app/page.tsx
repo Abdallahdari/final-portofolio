@@ -8,11 +8,13 @@ import { CardHoverEffectDemo } from "./_components/CardHoverEffectDemo";
 // import BlogFetching from "./_components/BlogFetching";
 export default function page() {
   return (
-    <div className="container mx-auto xl:max-w-[1200px] py-7">
+    <div className="container mx-auto xl:max-w-[1200px] py-7 ">
       <>
         <Navbar />
         <Hero />
-        <Experice />
+        <div className="px-4">
+          <Experice />
+        </div>
         <CardHoverEffectDemo />
         {/* <BlogFetching /> */}
         <Footer />
