@@ -14,11 +14,11 @@ export default function Hero() {
         </h1>
         <div className=" ">
           <p className="text-xl text-gray-200 ">
-            I am Abdullahi Abdirizak, a Software Engineer and Web Developer
-            currently in my fourth year at Üsküdar University. I am also the
-            founder of the Dari E-commerce website, where I apply my technical
-            skills and business insights to create innovative online shopping
-            experiences
+            I am Abdullahi Abdirizak, a Software Engineer and Web Developer. I
+            finished my bachelor’s degree at Üsküdar University in Turkey. I am
+            also the founder of the Dalab E-commerce website, where I apply my
+            technical skills and business insights to create innovative online
+            shopping experiences .
           </p>
         </div>
       </div>
