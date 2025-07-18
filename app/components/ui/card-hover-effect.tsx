@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/app/lib/utilt";
-import { Car, SquareTerminal, Terminal } from "lucide-react";
+import { SquareTerminal } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
