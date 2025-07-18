@@ -1,12 +1,13 @@
 "use client";
 import { cn } from "@/app/lib/utilt";
-import { Car, SquareTerminal, Terminal } from "lucide-react";
+import { SquareTerminal } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import ProjectSkeleton from "../loading";
 
-export const HoverEffect = ({
+export const HoverEffect3 = ({
   items,
   className,
 }: {
@@ -20,38 +21,16 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [selected, setSelected] = useState<string>("All");
-  const Cat = ["All", ...new Set(items.map((item) => item.Catogery))];
-  const filteredItems =
-    selected === "All"
-      ? items
-      : items.filter((item) => item.Catogery === selected);
 
   return (
     <div>
-      <div className="md:flex hidden  items-center justify-center gap-4 mt-6">
-        {" "}
-        {Cat.map((item) => (
-          <button
-            key={item}
-            type="button"
-            className={`${
-              selected === item ? "bg-[#bac8ff]   text-black" : "text-white"
-            } border border-gray-400 rounded-lg  px-4 py-2 transition-all duration-500  `}
-            onClick={() => setSelected(item)}
-          >
-            {item}
-          </button>
-        ))}
-      </div>
-
       <div
         className={cn(
-          "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+          "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4  py-10",
           className
         )}
       >
-        {filteredItems.map((item, idx) => (
+        {items.map((item, idx) => (
           <Link
             href={item.Links}
             key={item.id}
@@ -116,14 +95,6 @@ export const HoverEffect = ({
             </Card>
           </Link>
         ))}
-      </div>
-      <div className="flex items-center justify-center">
-        <Link
-          href={"/projects"}
-          className="bg-[#06B6D4] text-white px-4 py-2 rounded-lg hover:bg-[#7cd0df] transition-all duration-300"
-        >
-          View All Projects
-        </Link>
       </div>
     </div>
   );

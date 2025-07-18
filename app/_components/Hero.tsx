@@ -1,5 +1,5 @@
 import React from "react";
-import pro from "../../public/pro.jpg";
+import pro from "../../public/main.jpg";
 import Image from "next/image";
 export default function Hero() {
   return (

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div className="w-full sticky top-4 z-50">
+    <div className="w-full sticky top-4 z-50 ">
       <div className="md:flex items-center justify-between gap-5 px-4">
         <div className="hidden md:flex flex-row space-x-12 items-center antialiased border px-4 py-2 rounded-2xl border-zinc-700/60 bg-zinc-800">
           <div className="flex items-center gap-3">
@@ -21,19 +21,19 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-6">
             <Link
-              href={"#hero"}
+              href={"#Expericne"}
+              className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
+            >
+              Home
+            </Link>
+            <Link
+              href={"/about"}
               className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
             >
               About
             </Link>{" "}
             <Link
-              href={"#Expericne"}
-              className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
-            >
-              Contributions
-            </Link>
-            <Link
-              href={"#Project"}
+              href={"/projects"}
               className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
             >
               Project
