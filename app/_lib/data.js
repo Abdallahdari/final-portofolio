@@ -14,7 +14,6 @@ export async function GetExperience() {
   if (error) {
     throw new Error("Cannot fetch the Project: ", error.message);
   }
-  console.log(data);
   return data;
 }
 
@@ -24,7 +23,6 @@ export async function GetProject() {
   if (error) {
     throw new Error("Cannot fetch the Project: ", error.message);
   }
-  console.log(data);
   return data;
 }
 
@@ -33,7 +31,6 @@ export async function Blogs() {
   if (error) {
     throw new Error("Cannot fetch the Project: ", error.message);
   }
-  console.log(data);
   return data;
 }
 export async function SingleProject(id) {
