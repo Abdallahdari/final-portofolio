@@ -45,8 +45,10 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <div className="bg-[#373D43] text-white flex items-center justify-center py-2 px-4 rounded-xl hover:bg-[#363a3a] transition-all duration-300">
-          <Link href={"/pdf"}>Download cv</Link>
+        <div className="bg-[rgb(55,61,67)] text-white flex items-center justify-center py-2 px-4 rounded-xl hover:bg-[#363a3a] transition-all duration-300">
+          <Link href={"/pdf"} download={true}>
+            Download cv
+          </Link>
         </div>
       </div>
 
@@ -66,7 +68,7 @@ export default function Navbar() {
         </div>
         <button
           onClick={() => setIsOpen(true)}
-          className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
+          className="bg-[#323238] hover:bg-[#06B6D4] text-white py-1 px-2 rounded-lg duration-300 transition-all"
         >
           <AlignLeft />
         </button>
@@ -81,7 +83,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center p-4 border-b border-zinc-700">
           <p className="text-lg font-semibold">Menu</p>
           <button
-            className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
+            className="bg-[#323238]  hover:bg-[#06B6D4] text-white py-1 px-2 rounded-lg duration-300 transition-all"
             onClick={() => setIsOpen(false)}
           >
             <X className="w-6 h-6 text-white" />
