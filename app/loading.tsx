@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Loader({ count = 3 }) {
   return (
-    <div className="h-[calc(100vh-15rem) flex items-center justify-center]">
+    <div className="h-screen flex items-center justify-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {Array.from({ length: count }).map((_, i) => (
           <div

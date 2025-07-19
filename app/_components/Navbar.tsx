@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div className="w-full sticky top-4 z-50 ">
+    <div className="w-full sticky top-4 z-40 ">
       <div className="md:flex items-center justify-between gap-5 px-4">
         <div className="hidden md:flex flex-row space-x-12 items-center antialiased border px-4 py-2 rounded-2xl border-zinc-700/60 bg-zinc-800">
           <div className="flex items-center gap-3">

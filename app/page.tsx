@@ -9,19 +9,25 @@ import Loader from "./loading";
 // import BlogFetching from "./_components/BlogFetching";
 export default function page() {
   return (
-    <div className="container mx-auto xl:max-w-[1200px] py-7 ">
-      <>
-        <Navbar />
-        <Hero />
-        <div className="px-4">
-          <Experice />
-        </div>
-        <Suspense fallback={<Loader />}>
-          <CardHoverEffectDemo />
-        </Suspense>
-        {/* <BlogFetching /> */}
-        <Footer />
-      </>
+    <div>
+      {" "}
+      <div className="container mx-auto xl:max-w-[1200px] py-7 ">
+        <>
+          <Navbar />
+
+          <Hero />
+          <Suspense fallback={<Loader />}>
+            <div className="px-4">
+              <Experice />
+            </div>
+          </Suspense>
+          <Suspense fallback={<Loader />}>
+            <CardHoverEffectDemo />
+          </Suspense>
+          {/* <BlogFetching /> */}
+          <Footer />
+        </>
+      </div>
     </div>
   );
 }
