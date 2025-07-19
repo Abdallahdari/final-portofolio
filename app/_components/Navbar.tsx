@@ -21,7 +21,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-6">
             <Link
-              href={"#Expericne"}
+              href={"/"}
               className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
             >
               Home

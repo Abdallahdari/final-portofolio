@@ -36,3 +36,14 @@ export async function Blogs() {
   console.log(data);
   return data;
 }
+export async function SingleProject(id) {
+  let { data, error } = await supabase
+    .from("Projects")
+    .select("*")
+    .eq("id", id)
+    .single();
+  if (error) {
+    throw new Error("Cannot fetch the Project: ", error.message);
+  }
+  return data;
+}

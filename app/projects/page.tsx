@@ -9,13 +9,15 @@ export default async function page() {
   return (
     <div className="container mx-auto xl:max-w-[1200px] py-7 ">
       <Navbar />
-      <h1 className="md:text-5xl max-w-[1000px] text-3xl text-white font-bold mt-12 mb-4">
-        I have been engaged in the development of
-        <span className="text-[#06B6D4]"> various Projects</span>
+      <h1 className="md:text-5xl  text-center text-3xl text-white font-bold mt-12 mb-4">
+        My
+        <span className="text-[#06B6D4]"> Projects</span>
       </h1>
-
+      <p className="text-center text-gray-400 ">
+        A compilation of projects I have undertaken, highlighting my
+        competencies in web development.
+      </p>{" "}
       <HoverEffect3 items={items} />
-
       <Footer />
     </div>
   );

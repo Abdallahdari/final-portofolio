@@ -14,8 +14,9 @@ export const HoverEffect3 = ({
     Topic: string;
     Desctrition: string;
     image: string;
-    id: string;
+    id: number;
     Links: string;
+    GitLinks: string;
   }[];
   className?: string;
 }) => {
@@ -31,7 +32,7 @@ export const HoverEffect3 = ({
       >
         {items.map((item, idx) => (
           <Link
-            href={item.Links}
+            href={`/projects/${item.id}`}
             key={item.id}
             className="relative group  block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
@@ -61,7 +62,7 @@ export const HoverEffect3 = ({
                   src={item.image}
                   height={2040}
                   width={2040}
-                  className="h-full w-full object-cover "
+                  className="h-full group-hover:scale-110 transition-all duration-300 w-full object-cover "
                   alt={item.image}
                 />
               </div>
@@ -77,7 +78,7 @@ export const HoverEffect3 = ({
                     item.Skills.map((skill: string, i: number) => (
                       <span
                         key={i}
-                        className="bg-[#06B6D4] text-white text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                        className="text-gray-500 text-xs font-semibold px-2.5 py-0.5 rounded-full"
                       >
                         {skill}
                       </span>
@@ -85,10 +86,10 @@ export const HoverEffect3 = ({
                 </div>
                 <Link
                   className="flex items-center text-gray-300 gap-2  group-hover:text-[#06B6D4] transition-all duration-300 mt-4"
-                  href={""}
+                  href={item.GitLinks || ""}
                 >
-                  <SquareTerminal size={20} />
-                  <p className="">viw source</p>
+                  <SquareTerminal size={16} />
+                  <p className="text-[13px]">View sourc</p>
                 </Link>
               </div>
             </Card>
@@ -109,7 +110,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full  overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full  overflow-hidden bg-[#27272A] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
