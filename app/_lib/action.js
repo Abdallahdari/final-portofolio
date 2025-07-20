@@ -18,10 +18,10 @@ export async function SendMassege(formData) {
 
   return data;
 }
-export async function Cvcounter() {
+export async function Cvcounter(counter) {
   const { data, error } = await supabase
     .from("Cv")
-    .insert([{ some_column: "someValue", other_column: "otherValue" }])
+    .insert([{ view: counter }])
     .select();
   if (error) {
     throw new Error("Cannot send the message: ", error.message);

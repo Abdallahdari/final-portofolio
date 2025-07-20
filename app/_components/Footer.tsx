@@ -26,7 +26,7 @@ export default function Footer() {
         </p>
         <div className="flex items-center gap-2 justify-center">
           <Link
-            href={"https://github.com/Abdallahdari?tab=repositories"}
+            href={"https://github.com/Abdallahdari"}
             className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
           >
             <Github />

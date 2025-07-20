@@ -3,12 +3,23 @@ import { AlignLeft, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { Cvcounter } from "../_lib/action";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [counter, SetCounter] = useState(0);
+  const incrementCounter = (e) => {
+    e.preventDefault();
+    Cvcounter(counter + 1);
+    SetCounter(counter + 1);
+    // Redirect to the PDF page
+  };
 
   return (
-    <div className="Desktop w-full sticky top-4 z-40">
+    <form
+      onSubmit={incrementCounter}
+      className="Desktop w-full sticky top-4 z-40"
+    >
       {/* Desktop View */}
       <div className="md:flex hidden items-center justify-between gap-5 px-4">
         <div className="md:flex flex-row space-x-12 items-center antialiased border px-4 py-2 rounded-2xl border-zinc-700/60 bg-zinc-800">
@@ -31,12 +42,7 @@ export default function Navbar() {
             >
               Home
             </Link>
-            <Link
-              href={"/about"}
-              className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
-            >
-              About
-            </Link>
+
             <Link
               href={"/projects"}
               className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
@@ -45,11 +51,12 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <div className="bg-[rgb(55,61,67)] text-white flex items-center justify-center py-2 px-4 rounded-xl hover:bg-[#363a3a] transition-all duration-300">
-          <Link href={"/pdf"} download={true}>
-            Download cv
-          </Link>
-        </div>
+        <Link
+          href={"/pdf"}
+          className="bg-[rgb(55,61,67)] text-white flex items-center justify-center py-2 px-4 rounded-xl hover:bg-[#06B6D4] transition-all duration-300"
+        >
+          Download cv
+        </Link>
       </div>
 
       {/* Mobile View */}
@@ -97,13 +104,7 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <Link
-            href="/about"
-            onClick={() => setIsOpen(false)}
-            className="hover:bg-zinc-800 p-2 rounded-lg transition"
-          >
-            About
-          </Link>
+
           <Link
             href="/projects"
             onClick={() => setIsOpen(false)}
@@ -111,15 +112,16 @@ export default function Navbar() {
           >
             Project
           </Link>
+
           <Link
-            href="/pdf"
+            href={"/pdf"}
             onClick={() => setIsOpen(false)}
-            className="hover:bg-zinc-800 p-2 rounded-lg transition"
+            className="hover:bg-[#06B6D4]  p-2 rounded-lg transition duration-300 "
           >
             Download CV
           </Link>
         </div>
       </div>
-    </div>
+    </form>
   );
 }
