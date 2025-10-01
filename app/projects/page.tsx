@@ -3,8 +3,7 @@ import Navbar from "../_components/Navbar";
 import Footer from "../_components/Footer";
 import { GetProject } from "../_lib/data";
 import { HoverEffect3 } from "./Hover2";
-
-export default async function page() {
+export async function page() {
   const items = await GetProject();
   return (
     <div className="container mx-auto xl:max-w-[1200px] py-7 ">

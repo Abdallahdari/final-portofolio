@@ -1,7 +1,6 @@
-export const dynamic = "force-dynamic"; // <-- add this line
-
 import { HoverEffect } from "@/app/components/ui/card-hover-effect";
 import { GetProject } from "../_lib/data";
+export const dynamic = "force-dynamic";
 
 export async function CardHoverEffectDemo() {
   const project = await GetProject();

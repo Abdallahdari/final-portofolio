@@ -5,6 +5,7 @@ import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import { CardHoverEffectDemo } from "./_components/CardHoverEffectDemo";
 import Loader from "./loading";
+export const dynamic = "force-dynamic";
 
 // import BlogFetching from "./_components/BlogFetching";
 export default function page() {
