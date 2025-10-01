@@ -3,6 +3,7 @@ import Navbar from "../_components/Navbar";
 import Footer from "../_components/Footer";
 import { GetProject } from "../_lib/data";
 import { HoverEffect3 } from "./Hover2";
+export const dynamic = "force-dynamic";
 export async function page() {
   const items = await GetProject();
   return (
