@@ -32,7 +32,7 @@ export default function Footer() {
             <Github />
           </Link>
           <Link
-            href={""}
+            href={"https://www.linkedin.com/in/abdullahi-abdirizak-mohamed-96b5a4253/"}
             className="hover:bg-[#323238] text-white py-1 px-2 rounded-lg duration-300 transition-all"
           >
             <Linkedin />
