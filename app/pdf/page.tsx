@@ -4,7 +4,7 @@ const PDFViewer = () => {
       <iframe
         name=""
         title="PDF Viewer"
-        src="/resume.pdf"
+        src="/resumecv.pdf"
         className="w-full h-full"
       />
     </div>
